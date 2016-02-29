@@ -28,9 +28,8 @@
 				
             </div>
         </section>
-        <p id="greeting">
-            {{ $greeting }}
-        </p>
+        <p id="greeting">Loading BBC football news...</p>
+        <script type="text/javascript" src="/js/main.js"></script>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>
 
