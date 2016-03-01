@@ -101,6 +101,7 @@ body {
 } 
 
 #greeting {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     position: fixed;
     bottom: 40px;
