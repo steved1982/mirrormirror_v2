@@ -102,6 +102,7 @@ body {
 
 #greeting {
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
     text-align: center;
     position: fixed;
     bottom: 40px;
@@ -109,7 +110,7 @@ body {
 }
 
 .feed{
-    width: 50%;
+    width: 75%;
     margin-right: auto;
     margin-left: auto;
 }
