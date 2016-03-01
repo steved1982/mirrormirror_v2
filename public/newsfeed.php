@@ -5,6 +5,7 @@
  * Date: 29/02/2016
  * Time: 14:43
  */
+include_once "functions.php";
 
 $feed = file_get_contents('http://www.bbc.com/sport/football/rss.xml');
 $xml = new SimpleXMLElement($feed);
@@ -26,4 +27,4 @@ function sortFunction( $a, $b ) {
 }
 usort($feedArray, "sortFunction");
 
-echo "<h2>" . $feedArray[0]["title"] . "</h2>" . $feedArray[0]["description"] . "<br>" . $feedArray[0]["date"];
+echo "<div class='feed'><strong>" . $feedArray[0]["title"] . "</strong><br>" . $feedArray[0]["description"] . "<br><span>" . time_elapsed_string($feedArray[0]["date"]) . "</span></div>";

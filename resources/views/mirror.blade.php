@@ -28,7 +28,7 @@
 				
             </div>
         </section>
-        <p id="greeting">Loading BBC football news...</p>
+        <div id="greeting">Loading BBC football news...</div>
         <script type="text/javascript" src="/js/main.js"></script>
         <script type="text/javascript" src="/js/clock.js"></script>
         <script type="text/javascript" src="/js/weather.js"></script>

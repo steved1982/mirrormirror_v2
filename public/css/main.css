@@ -102,10 +102,20 @@ body {
 
 #greeting {
     text-align: center;
-    font-size: 1em;
+    font-size: 1.4em;
     position: fixed;
-    bottom: 0;
+    bottom: 40px;
     width: 100%; 
+}
+
+.feed{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.feed span{
+    font-size: 0.8em;
 }
 
 canvas {
@@ -118,7 +128,6 @@ canvas {
 #date {
     float: left;
     width: 400px;
-<!--    height:500px;-->
     margin: 0 0 0 0;
 }
 
@@ -128,6 +137,7 @@ canvas {
 
 #time {
     font-size: 4em;
+    font-weight: bold;
     padding: 0px;
 }
 
