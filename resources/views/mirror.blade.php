@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta http-equiv="refresh" content="7200"> <!-- Refresh every 2 hours -->
         <title>Mirror Mirror</title>
         <meta name="description" content="Mirror mirror on the wall...">
         <meta name="viewport" content="width=device-width, initial-scale=1">
