@@ -102,7 +102,7 @@ body {
 
 #greeting {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6em;
+    font-size: 3em;
     text-align: center;
     position: fixed;
     bottom: 40px;
@@ -137,7 +137,7 @@ canvas {
 }
 
 #time {
-    font-size: 6em;
+    font-size: 10em;
     font-weight: bold;
     padding: 0px;
 }
