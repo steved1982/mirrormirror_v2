@@ -3,7 +3,7 @@ date = null;
 
 var update = function () {
     date = moment(new Date());
-    date.setHours ( date.getHours() + 1 );
+    date.setHours ( date.getTime() + 1 );
     var html = '<p>' + date.format('dddd, MMMM Do') + '</p>';
     html += '<p id="time">' + date.format('HH:mm') + '</p>';
     datetime.html(html);
