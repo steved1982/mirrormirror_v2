@@ -2,9 +2,10 @@ var datetime = null,
 date = null;
 
 var update = function () {
-    date = moment(new Date())
+    date = moment(new Date());
+    time = date.format('HH:mm') + (1*60*60*1000);
     var html = '<p>' + date.format('dddd, MMMM Do') + '</p>';
-    html += '<p id="time">' + math.round(1+date.format('HH')) + ":" + date.format('mm') + '</p>';
+    html += '<p id="time">' + time + '</p>';
     datetime.html(html);
 };
 
