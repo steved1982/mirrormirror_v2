@@ -3,9 +3,9 @@ date = null;
 
 var update = function () {
     date = moment(new Date());
-    time = date.format('HH:mm') + (1*60*60*1000);
+    date.setHours ( date.getHours() + 1 );
     var html = '<p>' + date.format('dddd, MMMM Do') + '</p>';
-    html += '<p id="time">' + time + '</p>';
+    html += '<p id="time">' + date.format('HH:mm') + '</p>';
     datetime.html(html);
 };
 
