@@ -4,7 +4,7 @@ date = null;
 var update = function () {
     date = moment(new Date());
     var myDate = new Date();
-    myTime =  ( myDate.getHours() );
+    myTime =  ( myDate.getHours() + 1 );
     myMins =  ( myDate.getMinutes() );
     if (myMins < 10){
         myMins = "0" + myMins;
