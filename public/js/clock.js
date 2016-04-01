@@ -2,10 +2,10 @@ var datetime = null,
 date = null;
 
 var update = function () {
-    date = moment(new Date());
-    date.setHours ( date.getTime() + 1 );
-    var html = '<p>' + date.format('dddd, MMMM Do') + '</p>';
-    html += '<p id="time">' + date.format('HH:mm') + '</p>';
+    var myDate = new Date();
+    myDate.setHours ( myDate.getHours() + 1 );
+    var html = '<p>' + myDate.format('dddd, MMMM Do') + '</p>';
+    html += '<p id="time">' + myDate.format('HH:mm') + '</p>';
     datetime.html(html);
 };
 
