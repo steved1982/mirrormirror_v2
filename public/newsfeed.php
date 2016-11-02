@@ -27,6 +27,5 @@ function sortFunction( $a, $b ) {
 }
 usort($feedArray, "sortFunction");
 
-//echo "<div class='feed'><strong>" . $feedArray[0]["title"] . "</strong><br>" . $feedArray[0]["description"] . "<br><span>" . time_elapsed_string($feedArray[0]["date"]) . "</span></div>";
+echo "<div class='feed'><strong>" . $feedArray[0]["title"] . "</strong><br>" . $feedArray[0]["description"] . "<br><span>" . time_elapsed_string($feedArray[0]["date"]) . "</span></div>";
 ?>
-<img src="img/IMG_3208.JPG" width="50%">
