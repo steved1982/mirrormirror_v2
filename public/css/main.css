@@ -118,6 +118,11 @@ body {
     width: 100%;
 }
 
+.forecast-feed{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .feed{
     width: 75%;
