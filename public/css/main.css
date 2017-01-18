@@ -109,6 +109,16 @@ body {
     width: 100%; 
 }
 
+#forecast {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    position: fixed;
+    bottom: 200px;
+    width: 100%;
+}
+
+
 .feed{
     width: 75%;
     margin-right: auto;
