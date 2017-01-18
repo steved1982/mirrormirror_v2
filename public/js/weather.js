@@ -14,11 +14,14 @@
                   html += '<div><i class="fa fa-angle-up"></i>  High '+weather.high + ' <i class="fa fa-angle-down"></i>  Low ' + weather.low + '</div>'
                   $("#weather").html(html);
 
-                  forecast = '<div style="width: 10%; text-align: center; float: left;">'+weather.forecast[1].day+'<br /><img src="' + weather.forecast[1].image + '" />';
-                  forecast += '<div style="width: 10%; text-align: center; float: left;">'+weather.forecast[2].day+'<br /><img src="' + weather.forecast[2].image + '" />';
-                  forecast += '<div style="width: 10%; text-align: center; float: left;">'+weather.forecast[3].day+'<br /><img src="' + weather.forecast[3].image + '" />';
-                  forecast += '<div style="width: 10%; text-align: center; float: left;">'+weather.forecast[4].day+'<br /><img src="' + weather.forecast[4].image + '" />';
-                  forecast += '<div style="width: 10%; text-align: center; float: left;">'+weather.forecast[5].day+'<br /><img src="' + weather.forecast[5].image + '" />';
+                console.log(weather);
+
+                  forecast = '<div class="feed"><div style="width: 20%; text-align: center; float: left;">'+weather.forecast[1].day+'<br /><img src="' + weather.forecast[1].image + '" style="padding-left:20px;" /></div>';
+                  forecast += '<div style="width: 20%; text-align: center; float: left;">'+weather.forecast[2].day+'<br /><img src="' + weather.forecast[2].image + '" style="padding-left:20px;" /></div>';
+                  forecast += '<div style="width: 20%; text-align: center; float: left;">'+weather.forecast[3].day+'<br /><img src="' + weather.forecast[3].image + '" style="padding-left:20px;" /></div>';
+                  forecast += '<div style="width: 20%; text-align: center; float: left;">'+weather.forecast[4].day+'<br /><img src="' + weather.forecast[4].image + '" style="padding-left:20px;" /></div>';
+                  forecast += '<div style="width: 20%; text-align: center; float: left;">'+weather.forecast[5].day+'<br /><img src="' + weather.forecast[5].image + '" style="padding-left:20px;" /></div>';
+                  forecast += '</div>';
 
                   $("#forecast").html(forecast);
 
