@@ -114,12 +114,12 @@ body {
     font-size: 3em;
     text-align: center;
     position: fixed;
-    bottom: 300px;
+    bottom: 250px;
     width: 100%;
 }
 
 .forecast-feed{
-    width: 90%;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
