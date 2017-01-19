@@ -11,7 +11,7 @@
         {{--<link rel="stylesheet" href="css/normalize.css">--}}
         {{--<link rel="stylesheet" href="css/main.css">--}}
         {{--<link rel="stylesheet" href="css/weather.css">--}}
-
+        <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="/js/vendor/owfont-master/css/owfont-regular.css">
 
         <!-- Fonts -->
