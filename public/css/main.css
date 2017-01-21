@@ -110,7 +110,7 @@ body {
     font-size: 2em;
     text-align: center;
     position: fixed;
-    bottom: 300px;
+    bottom: 400px;
     width: 100%;
 }
 
@@ -175,6 +175,9 @@ section {
     float: right;
 }
 
+.weather-text{
+    font-size: 3em;
+}
 
 
 
