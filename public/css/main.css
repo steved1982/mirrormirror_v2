@@ -99,7 +99,7 @@ body {
 } 
 
 #greeting {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     position: fixed;
     bottom: 40px;
@@ -107,7 +107,7 @@ body {
 }
 
 #forecast {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
     position: fixed;
     bottom: 250px;
@@ -166,6 +166,12 @@ section {
     color: #ffffff;
 }
 
+
+#weather {
+    font-size: 10em;
+    font-weight: bold;
+    padding: 0px;
+}
 
 
 
