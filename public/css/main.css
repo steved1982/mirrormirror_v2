@@ -11,9 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /*
@@ -97,12 +95,11 @@ textarea {
 
 body {
     background-color: #000000;
-    color: #F8F8FF;
+    color: #FFFFFF;
 } 
 
 #greeting {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
     position: fixed;
     bottom: 40px;
@@ -110,8 +107,7 @@ body {
 }
 
 #forecast {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3em;
+    font-size: 1.5em;
     text-align: center;
     position: fixed;
     bottom: 250px;
