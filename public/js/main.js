@@ -21,7 +21,7 @@ var updateWeather = function () {
                 nightorday = "n";
             }
 
-            html = '<div id="weather-icon" width="128" height="128"><i class="owf owf-5x owf-'+data.weather[0].id+'-'+nightorday+'"></i></div>';
+            html = '<div id="weather-icon" width="128" height="128"><i class="owf owf-5x owf-'+data.weather[0].id+'-'+nightorday+'"></i><br />'+data.weather[0].main+'</div>';
             html += '<div class="weather-text" id="region">'+data.name+' ' + Math.ceil(data.main.temp)+'&deg;</div>';
             html += '<div class="weather-text"><i class="fa fa-angle-up"></i>  High '+data.main.temp_max + ' <i class="fa fa-angle-down"></i>  Low ' + data.main.temp_min + '</div>'
             $("#weather").html(html);

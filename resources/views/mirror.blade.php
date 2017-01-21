@@ -30,7 +30,7 @@
 				
             </div>
         </section>
-        <div id="forecast">Loading the weather forecast...</div>
+        <div id="forecast" style="display: none;">Loading the weather forecast...</div>
         <div id="greeting">Loading BBC football news...</div>
         <script type="text/javascript" src="/js/main.js?v=1"></script>
         <script type="text/javascript" src="/js/clock.js"></script>
