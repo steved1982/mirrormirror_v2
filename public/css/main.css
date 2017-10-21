@@ -99,7 +99,7 @@ body {
 } 
 
 #greeting {
-    font-size: 2em;
+    font-size: 1em;
     text-align: center;
     position: fixed;
     bottom: 40px;
@@ -130,7 +130,6 @@ body {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    font-size: 1.5em;
 }
 
 
