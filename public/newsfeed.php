@@ -34,8 +34,8 @@ function sortFunction( $a, $b ) {
 usort($feedArray, "sortFunction");
 
 echo "<div class='feed'>";
-echo "<div style='float: left; width: 30%;'><img src='".$feedArray[0]["image"]."' width='100%'></div>";
-echo "<div style='float: left; width: 70%; padding-left: 20px;'><strong>" . $feedArray[0]["title"] . "</strong>";
+echo "<div style='float: left; width: 40%;'><img src='".$feedArray[0]["image"]."' width='80%'></div>";
+echo "<div style='float: left; width: 60%; text-align: left;'><strong>" . $feedArray[0]["title"] . "</strong>";
 echo "<br>" . $feedArray[0]["description"] . "<br><span>" . time_elapsed_string($feedArray[0]["date"]) . "</span></div>";
 echo "</div>";
 ?>
