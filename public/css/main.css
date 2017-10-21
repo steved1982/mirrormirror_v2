@@ -120,15 +120,18 @@ body {
     margin-left: auto;
 }
 
+.forecast-feed span{
+    font-size: 0.8em;
+    position: relative;
+    bottom: 5px;
+}
+
 .feed{
     width: 75%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.feed span{
-    /*font-size: 0.8em;*/
-}
 
 canvas {
     display: block;
