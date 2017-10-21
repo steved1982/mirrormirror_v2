@@ -26,8 +26,21 @@ var updateWeather = function () {
             html += '<div class="weather-text" id="region">'+data.name+'</div>';
             html += '<div class="weather-text"><i class="fa fa-angle-up"></i>  High '+data.main.temp_max + ' <i class="fa fa-angle-down"></i>  Low ' + data.main.temp_min + '</div>'
             $("#weather").html(html);
+        }
+        ,
+        url: "http://api.openweathermap.org/data/2.5/forecast?q="+location+"&units=metric&appid="+api_key,
+        success: function (data) {
+            console.log(data);
 
-            $("#forecast").html(html);
+            forecast = '<div class="forecast-feed">';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[7].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[15].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[23].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[31].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+data.list[39].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
+            forecast += '</div>';
+
+            $("#forecast").html(forecast);
         }
     });
 };
