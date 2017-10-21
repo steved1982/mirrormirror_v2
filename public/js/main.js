@@ -52,11 +52,11 @@ var updateWeather = function () {
             var day5 = d_names[t.getDay()];
 
             forecast = '<div class="forecast-feed">';
-            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day1+'<br /><img width="200px" src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[7].main.temp)+'<span>&#8451;</span></div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day2+'<br /><img width="200px" src="http://openweathermap.org/img/w/' + data.list[15].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[15].main.temp)+'<span>&#8451;</span></div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day3+'<br /><img width="200px" src="http://openweathermap.org/img/w/' + data.list[23].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[23].main.temp)+'<span>&#8451;</span></div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day4+'<br /><img width="200px" src="http://openweathermap.org/img/w/' + data.list[31].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[31].main.temp)+'<span>&#8451;</span></div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day5+'<br /><img width="200px" src="http://openweathermap.org/img/w/' + data.list[39].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[39].main.temp)+'<span>&#8451;</span></div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day1+'<br /><img width="100px" src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[7].main.temp)+'<span>&#8451;</span></div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day2+'<br /><img width="100px" src="http://openweathermap.org/img/w/' + data.list[15].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[15].main.temp)+'<span>&#8451;</span></div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day3+'<br /><img width="100px" src="http://openweathermap.org/img/w/' + data.list[23].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[23].main.temp)+'<span>&#8451;</span></div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day4+'<br /><img width="100px" src="http://openweathermap.org/img/w/' + data.list[31].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[31].main.temp)+'<span>&#8451;</span></div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+day5+'<br /><img width="100px" src="http://openweathermap.org/img/w/' + data.list[39].weather[0].icon + '.png" /><br>'+Math.ceil(data.list[39].main.temp)+'<span>&#8451;</span></div>';
             forecast += '</div>';
 
             $("#forecast").html(forecast);
