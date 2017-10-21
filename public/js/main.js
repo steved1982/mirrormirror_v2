@@ -27,7 +27,7 @@ var updateWeather = function () {
             html += '<div class="weather-text"><i class="fa fa-angle-up"></i>  High '+data.main.temp_max + ' <i class="fa fa-angle-down"></i>  Low ' + data.main.temp_min + '</div>'
             $("#weather").html(html);
 
-            //$("#forecast").html(html);
+            $("#forecast").html(html);
         }
     });
 };
