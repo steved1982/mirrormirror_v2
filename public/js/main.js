@@ -33,11 +33,11 @@ var updateWeather = function () {
             console.log(data);
 
             forecast = '<div class="forecast-feed">';
-            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[7].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[15].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[23].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:10px;">'+data.list[31].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
-            forecast += '<div style="width: 20%; text-align: center; float: left;">'+data.list[39].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:5px;">'+data.list[7].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[7].weather[0].icon + '.png" /><br>'+data.list[7].main.temp+'&#8451;</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:5px;">'+data.list[15].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[15].weather[0].icon + '.png" /><br>'+data.list[15].main.temp+'&#8451;</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:5px;">'+data.list[23].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[23].weather[0].icon + '.png" /><br>'+data.list[23].main.temp+'&#8451;</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left; margin-right:5px;">'+data.list[31].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[31].weather[0].icon + '.png" /><br>'+data.list[31].main.temp+'&#8451;</div>';
+            forecast += '<div style="width: 20%; text-align: center; float: left;">'+data.list[39].weather[0].main+'<br /><img src="http://openweathermap.org/img/w/' + data.list[39].weather[0].icon + '.png" /><br>'+data.list[39].main.temp+'&#8451;</div>';
             forecast += '</div>';
 
             $("#forecast").html(forecast);
