@@ -34,3 +34,11 @@ function time_elapsed_string($datetime, $full = false) {
     if (!$full) $string = array_slice($string, 0, 1);
     return $string ? implode(', ', $string) . ' ago' : 'just now';
 }
+
+function xml2array ( $xmlObject, $out = array () )
+{
+    foreach ( (array) $xmlObject as $index => $node )
+        $out[$index] = ( is_object ( $node ) ) ? xml2array ( $node ) : $node;
+
+    return $out;
+}
